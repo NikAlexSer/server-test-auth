@@ -25,7 +25,7 @@ router.get('/', (req, res, next) => {
 });
 router.get('/auth', (req, res, next) => {
     console.log(req)
-    res.send(req)
+    res.send(JSON.parse(req))
 })
 
 app.listen(port, (err) => {
