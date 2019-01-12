@@ -24,8 +24,8 @@ router.get('/', (req, res, next) => {
     res.send('<a href="https://oauth.vk.com/authorize?client_id=6814926&display=page&redirect_uri=http://95.179.152.129:3100/auth&scope=friends&response_type=code&v=5.92">Click me</a>');
 });
 router.get('/auth', (req, res, next) => {
-    console.log(req)
-    res.send(JSON.parse(req))
+    console.log(req.query)
+    res.send(req.query)
 })
 
 app.listen(port, (err) => {
