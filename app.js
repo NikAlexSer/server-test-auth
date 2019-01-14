@@ -28,8 +28,8 @@ router.get('/auth', (req, res, next) => {
     res.send(req.query)
 })
 router.post('/test', (req, res, next) => {
-    console.log(req.body)
-    res.send(req.body)
+    console.log(req)
+    res.send(JSON.stringify(req))
 })
 
 app.listen(port, (err) => {
