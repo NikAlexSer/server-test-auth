@@ -29,8 +29,6 @@ router.get('/auth', (req, res, next) => {
 })
 router.post('/test', (req, res, next) => {
     console.log(req.body)
-    console.log(req.payload)
-    console.log(req.data)
     res.send('ziga o/')
 })
 
