@@ -27,7 +27,7 @@ router.get('/auth', (req, res, next) => {
     console.log(req.query)
     res.send(req.query)
 })
-router.get('/test', (req, res, next) => {
+router.post('/test', (req, res, next) => {
     console.log(req.body)
     res.send(req.body)
 })
