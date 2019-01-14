@@ -27,6 +27,10 @@ router.get('/auth', (req, res, next) => {
     console.log(req.query)
     res.send(req.query)
 })
+router.get('/test', (req, res, next) => {
+    console.log(req.body)
+    res.send(req.body)
+})
 
 app.listen(port, (err) => {
     if (err) {
